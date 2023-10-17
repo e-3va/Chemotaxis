@@ -4,11 +4,12 @@ PImage bg;
 void setup(){
   size(400,400);
   dog = new Chemotaxis[(int)(Math.random()*20)+5];
-  for(int i = 0; i < dog.length; i++)
+  for(int i = 0; i < dog.length; i++){
     dog[i] = new Chemotaxis((int)(Math.random()*400),(int)(Math.random()*400));
+  }
   bg = loadImage("grass.jpg");
-  background(bg);
 }
+
 
 void draw(){
   for(int i = 0; i < dog.length; i++){
