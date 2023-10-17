@@ -1,6 +1,6 @@
 Chemotaxis[] dog;
 PImage bg;
-PFont font;
+//PFont font;
 
 void setup(){
   size(400,400);
@@ -8,8 +8,8 @@ void setup(){
   for(int i = 0; i < dog.length; i++)
     dog[i] = new Chemotaxis((int)(Math.random()*400),(int)(Math.random()*400));
   bg = loadImage("grass.jpg");
-  font = createFont("Arial-Black", 20);
-  textFont(font);
+  //font = createFont("Arial-Black", 20);
+  //textFont(font);
 }
 
 void draw(){
@@ -24,6 +24,7 @@ void draw(){
     ellipse(mouseX, mouseY, 30, 30);
   textAlign(CENTER);
   fill(255);
+  textSize(25);
   text("Hold the mouse to catch the ball!", 200, 380);
 }
 
