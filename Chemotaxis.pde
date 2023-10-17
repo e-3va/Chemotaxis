@@ -6,11 +6,10 @@ void setup(){
   dog = new Chemotaxis[(int)(Math.random()*20)+5];
   for(int i = 0; i < dog.length; i++)
     dog[i] = new Chemotaxis((int)(Math.random()*400),(int)(Math.random()*400));
-  //bg = loadImage("grass.jpg");
+  bg = loadImage("grass.jpg");
 }
 
 void draw(){
-  bg = loadImage("grass.jpg");
   background(bg);
   for(int i = 0; i < dog.length; i++){
     dog[i].show();
