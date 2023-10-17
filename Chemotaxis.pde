@@ -11,7 +11,6 @@ void setup(){
 }
 
 void draw(){
-  background(bg);
   for(int i = 0; i < dog.length; i++){
     dog[i].show();
     dog[i].move();
