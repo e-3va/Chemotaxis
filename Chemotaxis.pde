@@ -8,8 +8,8 @@ void setup(){
     dog[i] = new Chemotaxis((int)(Math.random()*400),(int)(Math.random()*400));
   }
   bg = loadImage("grass.jpg");
+  background(bg);
 }
-
 
 void draw(){
   for(int i = 0; i < dog.length; i++){
